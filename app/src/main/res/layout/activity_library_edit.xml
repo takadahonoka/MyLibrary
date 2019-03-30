@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/left_nav_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.9"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/ivProductImage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/etProductName"
+                android:hint="@string/et_product_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Spinner
+                android:id="@+id/spProductType"
+                android:entries="@array/sp_product_type_list"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:text="@string/et_product_number"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_weight="0.2"
+                    android:textSize="20sp"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:onClick="onNumberMinusClick"
+                        android:text="@string/et_product_number_minus"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center_vertical|center_horizontal"/>
+
+                    <EditText
+                        android:id="@+id/etProductNumber"
+                        android:onClick="onProductNumberClick"
+                        android:layout_width="65dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"/>
+
+                    <Button
+                        android:onClick="onNumberPlusClick"
+                        android:text="@string/et_product_number_plus"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="center_vertical|center_horizontal"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:text="@string/et_product_date_type1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:gravity="center_vertical|right"/>
+
+                <Switch
+                    android:id="@+id/swDateType"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1"
+                    android:gravity="center_vertical|center_horizontal"/>
+
+                <TextView
+                    android:text="@string/et_product_date_type2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:layout_marginLeft="5dp"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:gravity="center_vertical|left"/>
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/etProductDate"
+                android:onClick="onProductDateClick"
+                android:hint="@string/et_product_date"
+                android:layout_width="match_parent"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:layout_height="50dp" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/etProductMemo"
+            android:hint="@string/et_product_memo"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+            android:gravity="top"/>
+
+    </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

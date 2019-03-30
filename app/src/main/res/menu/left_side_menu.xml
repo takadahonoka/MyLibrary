@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_all"
+            android:title="全件" />
+        <item
+            android:id="@+id/nav_vegetables"
+            android:title="野菜" />
+        <item
+            android:id="@+id/nav_meat"
+            android:title="肉" />
+        <item
+            android:id="@+id/nav_fish"
+            android:title="魚" />
+        <item
+            android:id="@+id/nav_seasoning"
+            android:title="調味料" />
+    </group>
+
+    <item tools:ignore="MenuTitle">
+        <menu>
+            <item
+                android:id="@+id/nav_new_type"
+                android:title="種別追加" />
+        </menu>
+    </item>
+
+</menu>

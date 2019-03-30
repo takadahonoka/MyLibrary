@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">マイライブラリ</string>
+
+
+    <!-- 詳細用 -->
+    <string name="et_product_name">商品名</string>
+    <string name="et_product_memo">メモ</string>
+    <string name="et_product_date">期限</string>
+    <string name="et_product_number">個数</string>
+    <string name="et_product_number_minus">ー</string>
+    <string name="et_product_number_plus">＋</string>
+    <string-array name="sp_product_type_list">
+        <item>選択して下さい。</item>
+        <item>野菜</item>
+        <item>肉</item>
+        <item>魚</item>
+        <item>調味料</item>
+    </string-array>
+    <string name="et_product_date_type1">消費期限</string>
+    <string name="et_product_date_type2">賞味期限</string>
+
+    <!-- 左サイドのナビメニュー用 -->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string-array name="game">
+        <item>アイテム 1</item>
+        <item>アイテム 2</item>
+        <item>アイテム 3</item>
+    </string-array>
+</resources>
